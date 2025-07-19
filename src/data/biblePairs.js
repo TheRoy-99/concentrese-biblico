@@ -38,5 +38,12 @@ export const biblePairs = [
   { id: 37, front: "Timoteo", back: "Hijo espiritual de Pablo" },
   { id: 38, front: "Ana (profetisa)", back: "Reconoció al Mesías en el templo" },
   { id: 39, front: "Miriam", back: "Hermana de Moisés, profetisa" },
-  { id: 40, front: "Tito", back: "Compañero de Pablo en sus viajes" }
+  { id: 40, front: "Tito", back: "Compañero de Pablo en sus viajes" },
+  { id: 41, front: "Lidia", back: "Vendedora de púrpura, primera europea convertida" },
+  { id: 42, front: "Priscila", back: "Maestra de Apolos junto a Aquila" },
+  { id: 43, front: "Bernabé", back: "Compañero de Pablo en sus viajes misioneros" },
+  { id: 44, front: "Silas", back: "Compañero de Pablo y encarcelado con él" },
+  { id: 45, front: "Apolo", back: "Elocuente predicador del evangelio" },
+  { id: 46, front: "Tadeo", back: "Uno de los doce apóstoles" },
+  { id: 47, front: "Lázaro", back: "Resucitado por Jesús después de cuatro días muerto" }
 ];
