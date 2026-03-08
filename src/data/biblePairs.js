@@ -1,49 +1,63 @@
-export const biblePairs = [
-  { id: 1, front: "Adán", back: "Eva" },
-  { id: 2, front: "Abraham", back: "Sara" },
-  { id: 3, front: "Isaac", back: "Rebeca" },
-  { id: 4, front: "Jacob", back: "Raquel" },
-  { id: 5, front: "José", back: "Asenat" },
-  { id: 6, front: "Moisés", back: "Séfora" },
-  { id: 7, front: "David", back: "Abigail" },
-  { id: 8, front: "Zacarías", back: "Elisabet" },
-  { id: 9, front: "Aquila", back: "Priscila" },
-  { id: 10, front: "Ananías", back: "Safira" },
-  { id: 11, front: "Booz", back: "Rut" },
-  { id: 12, front: "Elcana", back: "Ana" },
-  { id: 13, front: "Sansón", back: "Dalila" },
-  { id: 14, front: "Acab", back: "Jezabel" },
-  { id: 15, front: "Herodes", back: "Herodías" },
-  { id: 16, front: "Eutico", back: "Caí de una ventana y Pablo me resucito" },
-  { id: 17, front: "Judá", back: "Tamar" },
-  { id: 18, front: "Amram", back: "Jocabed" },
-  { id: 19, front: "Félix", back: "Drusila" },
-  { id: 20, front: "Asuero", back: "Ester" },
-  { id: 21, front: "Naamán", back: "Se lavó 7 veces en el río Jordán" },
-  { id: 22, front: "Débora", back: "Jueza y profetisa de Israel" },
-  { id: 23, front: "Esteban", back: "Primer mártir cristiano" },
-  { id: 24, front: "Felipe", back: "Evangelizó al etíope" },
-  { id: 25, front: "Noé", back: "Construyó un arca por mandato de Dios" },
-  { id: 26, front: "Elías", back: "Fue llevado al cielo en un torbellino" },
-  { id: 27, front: "Eliseo", back: "Multiplicó el aceite de la viuda" },
-  { id: 28, front: "Salomón", back: "Rey sabio que construyó el templo" },
-  { id: 29, front: "Samuel", back: "Profeta y juez de Israel" },
-  { id: 30, front: "Daniel", back: "Sobrevivió en el foso de los leones" },
-  { id: 31, front: "Jonás", back: "Fue tragado por un gran pez" },
-  { id: 32, front: "Job", back: "Perdió todo pero mantuvo su fe" },
-  { id: 33, front: "María", back: "Madre de Jesús" },
-  { id: 34, front: "Marta", back: "Hermana de Lázaro, amiga de Jesús" },
-  { id: 35, front: "Pedro", back: "Negó a Jesús tres veces" },
-  { id: 36, front: "Pablo", back: "Apóstol a los gentiles" },
-  { id: 37, front: "Timoteo", back: "Hijo espiritual de Pablo" },
-  { id: 38, front: "Ana (profetisa)", back: "Reconoció al Mesías en el templo" },
-  { id: 39, front: "Miriam", back: "Hermana de Moisés, profetisa" },
-  { id: 40, front: "Tito", back: "Compañero de Pablo en sus viajes" },
-  { id: 41, front: "Lidia", back: "Vendedora de púrpura, primera europea convertida" },
-  { id: 42, front: "Priscila", back: "Maestra de Apolos junto a Aquila" },
-  { id: 43, front: "Bernabé", back: "Compañero de Pablo en sus viajes misioneros" },
-  { id: 44, front: "Silas", back: "Compañero de Pablo y encarcelado con él" },
-  { id: 45, front: "Apolo", back: "Elocuente predicador del evangelio" },
-  { id: 46, front: "Tadeo", back: "Uno de los doce apóstoles" },
-  { id: 47, front: "Lázaro", back: "Resucitado por Jesús después de cuatro días muerto" }
+
+
+// ── FÁCIL (10 pares) ────────────────────────────────────────────────────────
+const EASY_PAIRS = [
+  { id: 1,  type: "person", level: "easy", front: "Adán",         back: "Primer hombre creado por Dios" },
+  { id: 2,  type: "person", level: "easy", front: "Noé",          back: "Construyó un arca por mandato de Dios" },
+  { id: 3,  type: "person", level: "easy", front: "Abraham",      back: "Padre de la fe" },
+  { id: 4,  type: "person", level: "easy", front: "Isaac",        back: "Hijo de la promesa" },
+  { id: 5,  type: "person", level: "easy", front: "Jacob",        back: "Luchó con Dios" },
+  { id: 6,  type: "person", level: "easy", front: "Moisés",       back: "Liberó al pueblo de Israel de Egipto" },
+  { id: 7,  type: "person", level: "easy", front: "David",        back: "Venció al gigante Goliat" },
+  { id: 8,  type: "person", level: "easy", front: "Jesús",        back: "Murió en la cruz por nuestros pecados" },
+  { id: 9,  type: "person", level: "easy", front: "Pedro",        back: "Negó a Jesús tres veces" },
+  { id: 10, type: "person", level: "easy", front: "Pablo",        back: "Apóstol a los gentiles" },
 ];
+
+// ── MEDIO (15 pares) ────────────────────────────────────────────────────────
+const MEDIUM_PAIRS = [
+  { id: 11, type: "person", level: "medium", front: "José",             back: "Gobernador de Egipto" },
+  { id: 12, type: "person", level: "medium", front: "Josué",            back: "Conquistador de Canaán" },
+  { id: 13, type: "person", level: "medium", front: "Booz",             back: "Redentor de Rut" },
+  { id: 14, type: "person", level: "medium", front: "Elcana",           back: "Padre de Samuel" },
+  { id: 15, type: "person", level: "medium", front: "Salomón",          back: "Rey sabio de Israel" },
+  { id: 16, type: "person", level: "medium", front: "Sansón",           back: "Juez de gran fuerza" },
+  { id: 17, type: "person", level: "medium", front: "Zacarías",         back: "Padre de Juan el Bautista" },
+  { id: 18, type: "person", level: "medium", front: "Juan",             back: "El discípulo amado" },
+  { id: 19, type: "person", level: "medium", front: "Esteban",          back: "Primer mártir cristiano" },
+  { id: 20, type: "person", level: "medium", front: "Elías",            back: "Fue llevado al cielo en un carro de fuego" },
+  { id: 21, type: "person", level: "medium", front: "Daniel",           back: "Fue protegido en el foso de los leones" },
+  { id: 22, type: "person", level: "medium", front: "Oseas",            back: "Profeta del amor fiel" },
+  { id: 23, type: "couple", level: "medium", front: "Adán y Eva",       back: "Primera pareja humana" },
+  { id: 24, type: "couple", level: "medium", front: "Abraham y Sara",   back: "Padres de Isaac" },
+  { id: 25, type: "couple", level: "medium", front: "Isaac y Rebeca",   back: "Padres de Esaú y Jacob" },
+];
+
+// ── DIFÍCIL (15 pares) ──────────────────────────────────────────────────────
+const HARD_PAIRS = [
+  { id: 26, type: "couple", level: "hard", front: "Jacob y Lea",               back: "Padres de varios patriarcas" },
+  { id: 27, type: "couple", level: "hard", front: "Jacob y Raquel",            back: "Padres de José y Benjamín" },
+  { id: 28, type: "couple", level: "hard", front: "Booz y Rut",                back: "Antepasados de David" },
+  { id: 29, type: "couple", level: "hard", front: "Elcana y Ana",              back: "Padres del profeta Samuel" },
+  { id: 30, type: "couple", level: "hard", front: "David y Mical",             back: "Una de las esposas de David" },
+  { id: 31, type: "couple", level: "hard", front: "David y Betsabé",           back: "Padres del rey Salomón" },
+  { id: 32, type: "couple", level: "hard", front: "Sansón y Dalila",           back: "Dalila traicionó a Sansón" },
+  { id: 33, type: "couple", level: "hard", front: "Oseas y Gomer",             back: "Matrimonio símbolo de redención" },
+  { id: 34, type: "couple", level: "hard", front: "Acab y Jezabel",            back: "Reyes malvados de Israel" },
+  { id: 35, type: "couple", level: "hard", front: "José y María",              back: "Padres terrenales de Jesús" },
+  { id: 36, type: "couple", level: "hard", front: "Zacarías e Isabel",         back: "Padres de Juan el Bautista" },
+  { id: 37, type: "couple", level: "hard", front: "Priscila y Aquila",         back: "Matrimonio misionero" },
+  { id: 38, type: "couple", level: "hard", front: "Ananías y Safira",          back: "Mintieron al Espíritu Santo" },
+  { id: 39, type: "couple", level: "hard", front: "Herodes Antipas y Herodías",back: "Mandaron decapitar a Juan" },
+  { id: 40, type: "person", level: "hard", front: "José (padre adoptivo)",     back: "Padre adoptivo de Jesús" },
+];
+
+// ── Export agrupado ─────────────────────────────────────────────────────────
+export const PAIRS_BY_LEVEL = {
+  easy:   EASY_PAIRS,
+  medium: MEDIUM_PAIRS,
+  hard:   HARD_PAIRS,
+};
+
+/** Acceso plano a todos los pares (útil para búsquedas/tests) */
+export const ALL_PAIRS = [...EASY_PAIRS, ...MEDIUM_PAIRS, ...HARD_PAIRS];
